@@ -34,7 +34,7 @@
 
 /* Card css start */
 .card-grid {
-  width: 110rem;
+  /* width: 110rem; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
@@ -44,8 +44,6 @@
 .card-img {
   width: 100%;
   border-radius: 15px 15px 0 0;
-
-
 }
 
 .card {
@@ -70,3 +68,12 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 /* Card css end */
+
+@media screen and (max-width:650px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 4%;
+  }
+}
